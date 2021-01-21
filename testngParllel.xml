@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- parallel tests execute , realtime we execute max two tests parallaly -->
+<!-- very imp here thread count should really match to how many tests are running parallay -->
+<!-- if we gave thread-count 2 and execute 3 tests parllel ,in this case only two tests can run parallel
+ when ever one of the  thread is available ,third test will run -->
+  <!--  here i am giving third test ,but thread-count is  2  only ,so third test will wait untill the
+  one of the  thread is available
+  in realtime if we go for running more tests pallallel it will slow down system and system resources may not be sufficient
+  eg:thread-count =4(default -thread count is:5 -->
+<!--   <suite name="PallelSuite" verbose ="2"  parallel="tests">
+  <test thread-count="2" name="ParallelTest1">
+    <classes>
+      <class name="demoTestNg.Assertions"/>
+    </classes>
+  </test> 
+    <test thread-count="2" name="ParallelTest2">
+   <classes>
+      <class name="demoTestNg.DataProviderDemo"/>
+    </classes>
+  </test> 
+ <test thread-count="2" name="ParallelTest3">
+   <classes>
+      <class name="demoTestNg.BeforeAndAfterAnnotation"/>
+    </classes>
+  </test> 
+</suite> -->
+
+<!-- parllel execution of classes also possible via xml -->
+<suite name="Pallelclasses" verbose ="2"  parallel="classes">
+  <test thread-count="2" name="Parallelclass1">
+    <classes>
+      <class name="demoTestNg.Assertions"/>
+       <class name="demoTestNg.DataProviderDemo"/>
+    </classes>
+ </test> 
+  </suite>
+  
+  <!-- parllel execution of methods possible but bit vast and moreover methods should be independent 
+  if the methods are dependenat it will throw many errors if dependency methods fail -->

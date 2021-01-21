@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<!-- Run individual class in same test -->
+ <!-- <suite name="BeforeAfterSuite"> 
+  <test verbose="2" name="FirstXMl test">
+    <classes>
+      <class name="classwork.BeforeAfterAnnotationsDemo" /> 
+    </classes>
+    </test>
+</suite> -->
+
+<!-- Run more than one class in same test -->
+
+<!--  <suite name="BeforeAfterSuite"> 
+    <test verbose="2" name="Second test">
+    <classes>
+      <class name="classwork.BeforeAfterAnnotationsDemo" /> 
+      <class name="classwork.TestAnnotationDemo" /> 
+    </classes>
+  </test> 
+ </suite>-->
+ 
+<!-- Run more than one test -->
+<!--  <suite name="BeforeAfterSuite"> 
+  <test verbose="2" name="Second test">
+    <classes>
+      <class name="classwork.BeforeAfterAnnotationsDemo" /> 
+    </classes>
+  </test> 
+  <test verbose="2" name="Second test">
+    <classes>
+      <class name="classwork.TestAnnotationDemo" /> 
+    </classes>
+  </test> 
+ </suite>-->
+ 
+ <!-- Run a package -->
+<!-- <suite name="BeforeAfterSuite"> 
+  <test verbose="2" name="package test">
+   <packages>
+   		<package name="classwork" />
+   </packages>
+  </test> 
+ </suite> -->
+ 
+  <!-- Run Methods include/exclude -->
+<!--  <suite name="BeforeAfterSuite"> 
+  <test verbose="2" name="includeexclude test">
+   <classes>
+   		<class name="classwork.BeforeAfterAnnotationsDemo" >
+   			<methods>
+   			 	<include name="login"/>
+   				<include name="search"/>
+   				<exclude name="createUser"/>
+   			</methods>
+   		</class>
+   		<class name="classwork.TestAnnotationDemo" >
+   			<methods>
+   				<exclude name="signout"/>
+   			</methods>
+   		</class>
+   </classes>
+  </test> 
+</suite>-->
+
+  <!-- Run using Groups include/exclude -->
+<!--  <suite name="GroupDemo"> 
+    <test verbose="2" name="Group test">
+   		<groups>
+    		<run>
+      			<include name="regression"/>
+      			<exclude name="sanity"/>
+    		</run>
+  		</groups>
+    <classes>
+      <class name="classwork.GroupingDemo" /> 
+    </classes>
+  </test> 
+</suite>-->
+
+<!-- Run Testcase using parameters -->
+<suite name="Param suite"> 
+ <parameter name="search_string" value="Summer Dresses"/>
+ <parameter name="user_email" value="test123@Test.com"/>
+  <test verbose="2" name="param test">
+    <classes>
+      <class name="classwork.ParamviaXML" /> 
+    </classes>
+    </test>
+</suite>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="58125" started-at="2021-01-20T03:39:58Z" finished-at="2021-01-20T03:40:56Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="58125" started-at="2021-01-20T03:39:58Z" finished-at="2021-01-20T03:40:56Z">
+      <class name="jdbc.Appsearch$AppSearch">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:jdbc.Appsearch$AppSearch@153acfe]" name="launchBrowser" is-config="true" duration-ms="13367" started-at="2021-01-20T03:39:58Z" finished-at="2021-01-20T03:40:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="searchDress(java.lang.String)[pri:1, instance:jdbc.Appsearch$AppSearch@153acfe]" name="searchDress" duration-ms="7797" started-at="2021-01-20T03:40:12Z" data-provider="dbData" finished-at="2021-01-20T03:40:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[T-shirts]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchDress -->
+        <test-method status="PASS" signature="searchDress(java.lang.String)[pri:1, instance:jdbc.Appsearch$AppSearch@153acfe]" name="searchDress" duration-ms="7624" started-at="2021-01-20T03:40:19Z" data-provider="dbData" finished-at="2021-01-20T03:40:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[T-shirts]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchDress -->
+        <test-method status="PASS" signature="searchDress(java.lang.String)[pri:1, instance:jdbc.Appsearch$AppSearch@153acfe]" name="searchDress" duration-ms="7091" started-at="2021-01-20T03:40:27Z" data-provider="dbData" finished-at="2021-01-20T03:40:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[T-shirts]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchDress -->
+        <test-method status="PASS" signature="searchDress(java.lang.String)[pri:1, instance:jdbc.Appsearch$AppSearch@153acfe]" name="searchDress" duration-ms="7251" started-at="2021-01-20T03:40:34Z" data-provider="dbData" finished-at="2021-01-20T03:40:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[win-dress]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchDress -->
+        <test-method status="PASS" signature="searchDress(java.lang.String)[pri:1, instance:jdbc.Appsearch$AppSearch@153acfe]" name="searchDress" duration-ms="7727" started-at="2021-01-20T03:40:41Z" data-provider="dbData" finished-at="2021-01-20T03:40:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sum-dress]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchDress -->
+        <test-method status="PASS" signature="close()[pri:3, instance:jdbc.Appsearch$AppSearch@153acfe]" name="close" duration-ms="6815" started-at="2021-01-20T03:40:49Z" finished-at="2021-01-20T03:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- jdbc.Appsearch$AppSearch -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

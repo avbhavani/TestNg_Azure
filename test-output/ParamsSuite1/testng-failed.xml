@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ParamsSuite1]">
+  <parameter name="user_email" value="test@123.com"/>
+  <parameter name="seach_string" value="summer dresses"/>
+  <test thread-count="5" name="Params(failed)">
+    <classes>
+      <class name="demoTestNg.ParamsViaXML">
+        <methods>
+          <include name="close"/>
+          <include name="search"/>
+          <include name="launchbrowser"/>
+          <include name="create"/>
+        </methods>
+      </class> <!-- demoTestNg.ParamsViaXML -->
+    </classes>
+  </test> <!-- Params(failed) -->
+</suite> <!-- Failed suite [ParamsSuite1] -->
